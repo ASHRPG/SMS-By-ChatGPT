@@ -1,0 +1,42 @@
+STUDENT MANAGEMENT SYSTEM PROJECT INSTRUCTIONS
+=============================================
+
+Professional Student Management System using Classic ASP.NET Web Forms Architecture.
+
+TECHNOLOGY STACK
+1. ASP.NET Web Forms
+2. VB.NET
+3. ADO.NET
+4. SQL Server 2014+
+5. Master Pages + Content Pages
+6. Bootstrap UI
+7. .NET Framework 4.7.2
+
+IMPORTANT RULES
+1. DO NOT use ASP.NET Core
+2. DO NOT use MVC
+3. Use only ASP.NET Web Forms
+4. Use Master Pages and Content Pages
+5. Use ADO.NET for database operations
+
+MAIN MODULES
+- Login Management
+- Dashboard
+- Student Management
+- Department Management
+- Course Management
+- Attendance
+- Fees
+- Results
+- Reports
+
+DATABASE
+- SQL Server 2014+
+- Stored Procedures
+- Lookup Tables
+- Foreign Keys
+
+UI REQUIREMENTS
+- Responsive Bootstrap UI
+- Sidebar Navigation
+- Professional Design
