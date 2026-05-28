@@ -1,0 +1,17 @@
+ALTER TABLE Attendance
+ADD CONSTRAINT FK_Attendance_Student
+FOREIGN KEY(StudentID)
+REFERENCES Student(StudentID)
+GO
+
+ALTER TABLE Fees
+ADD CONSTRAINT FK_Fees_Student
+FOREIGN KEY(StudentID)
+REFERENCES Student(StudentID)
+GO
+
+ALTER TABLE ExamResult
+ADD CONSTRAINT FK_ExamResult_Student
+FOREIGN KEY(StudentID)
+REFERENCES Student(StudentID)
+GO
