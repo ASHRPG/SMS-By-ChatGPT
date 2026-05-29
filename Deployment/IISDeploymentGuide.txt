@@ -1,0 +1,16 @@
+IIS Deployment Guide
+
+1. Open IIS Manager
+2. Create New Website
+3. Select Project Physical Path
+4. Configure ASP.NET v4.0 Application Pool
+5. Add SQL Server Connection String in web.config
+6. Restore Database from SQL Scripts
+7. Give IIS_IUSRS folder permissions
+8. Browse Website
+
+Requirements:
+- Windows Server / Windows 10+
+- IIS Installed
+- ASP.NET 4.x Enabled
+- SQL Server 2014+
