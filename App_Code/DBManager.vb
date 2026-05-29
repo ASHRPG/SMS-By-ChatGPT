@@ -3,12 +3,16 @@ Imports System.Data.SqlClient
 Imports System.Configuration
 
 Public Class DBManager
-    Dim con As New SqlConnection(ConfigurationManager.ConnectionStrings("constr").ConnectionString)
+
+    Private con As New SqlConnection(ConfigurationManager.ConnectionStrings("constr").ConnectionString)
 
     Public Function GetData(ByVal query As String) As DataTable
         Dim dt As New DataTable()
-        Dim da As New SqlDataAdapter(query, con)
-        da.Fill(dt)
+
+        Using da As New SqlDataAdapter(query, con)
+            da.Fill(dt)
+        End Using
+
         Return dt
     End Function
 
@@ -18,8 +22,12 @@ Public Class DBManager
         End If
 
         con.Open()
-        Dim cmd As New SqlCommand(query, con)
-        cmd.ExecuteNonQuery()
+
+        Using cmd As New SqlCommand(query, con)
+            cmd.ExecuteNonQuery()
+        End Using
+
         con.Close()
     End Sub
+
 End Class
